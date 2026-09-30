@@ -30,6 +30,20 @@ public class MainController {
         content.getChildren().setAll(calculatorView);
     }
 
+    @FXML
+    private void showConversion() throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("conversion-view.fxml")
+                );
+
+        Node conversionView = loader.load();
+
+        ConversionController conversionController = loader.getController();
+        conversionController.setMainController(this);
+
+        content.getChildren().setAll(conversionView);
+    }
+
     public void showMenu() {
         content.getChildren().setAll(menuPage);
     }
