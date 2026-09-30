@@ -35,6 +35,9 @@ public class ConversionController {
             vystup4.setText(format(m / 1000));
         } catch(NumberFormatException e) {
             vystup1.setText("Wrong input");
+            vystup2.setText("");
+            vystup3.setText("");
+            vystup4.setText("");
         }
     }
 
