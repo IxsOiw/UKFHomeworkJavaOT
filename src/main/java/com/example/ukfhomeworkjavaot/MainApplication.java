@@ -17,11 +17,7 @@ public class MainApplication extends Application {
         );
 
         Scene scene = new Scene(loader.load());
-
-        MainController controller = loader.getController();
-
-        controller.showMenu();
-
+        MainController controller = loader.getController(); controller.showMenu();
         stage.setTitle("UKF Homework");
         stage.setScene(scene);
         stage.show();

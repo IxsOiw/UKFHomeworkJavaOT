@@ -1,12 +1,12 @@
 package com.example.ukfhomeworkjavaot;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
-
-import java.io.IOException;
 
 public class MainController {
 
@@ -42,6 +42,17 @@ public class MainController {
         conversionController.setMainController(this);
 
         content.getChildren().setAll(conversionView);
+    }
+    
+    @FXML
+    private void showElevator() throws IOException{
+      FXMLLoader loader = new FXMLLoader(
+          getClass().getResource("elevator-view.fxml")
+          );
+
+      Node elevatorView = loader.load();
+
+      content.getChildren().setAll(elevatorView);
     }
 
     public void showMenu() {

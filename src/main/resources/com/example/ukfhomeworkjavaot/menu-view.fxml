@@ -15,9 +15,12 @@
 
                <children>
 
-                    <Button layoutX="40.0" layoutY="34.0" mnemonicParsing="false" onAction="#showCalculator" prefHeight="77.0" prefWidth="140.0" text="Calculator" />
+                    <Button layoutX="50.0" layoutY="34.0" mnemonicParsing="false" onAction="#showCalculator" prefHeight="77.0" prefWidth="140.0" text="Calculator" />
 
-                    <Button layoutX="191.0" layoutY="34.0" mnemonicParsing="false" onAction="#showConversion" prefHeight="77.0" prefWidth="140.0" text="Conversion" />
+                    <Button layoutX="200.0" layoutY="34.0" mnemonicParsing="false" onAction="#showConversion" prefHeight="77.0" prefWidth="140.0" text="Conversion" />
+
+                    <Button layoutX="350.0" layoutY="34.0" mnemonicParsing="false" onAction="#showElevator" prefHeight="77.0" prefWidth="140.0" text="Elevator" />
+
 
                </children>
             </AnchorPane>
